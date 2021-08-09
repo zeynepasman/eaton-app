@@ -1,0 +1,18 @@
+// to the core app and Angular Material mixins
+@import "app";
+
+// Include core Angular Material styles
+@include mat-core();
+
+// Setup the typography
+@include angular-material-typography($typography);
+
+// Create an Angular Material theme from the $theme map
+@include angular-material-theme($theme);
+
+// Partials
+@import "partials/reset";
+@import "partials/helpers";
+@import "partials/colors";
+@import "partials/typography";
+@import "partials/page-layouts";

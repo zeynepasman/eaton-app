@@ -1,0 +1,8 @@
+<mat-nav-list>
+  <mat-list-item>
+    <a mat-list-item [routerLink]="item.url">
+      <mat-icon mat-list-icon>{{ item.icon }}</mat-icon>
+      <span *ngIf="isExpanded || isShowing">{{ item.title }}</span>
+    </a>
+  </mat-list-item>
+</mat-nav-list>

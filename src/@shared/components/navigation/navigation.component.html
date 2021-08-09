@@ -1,0 +1,17 @@
+<mat-sidenav
+  #sidenav
+  class="example-sidenav"
+  mode="side"
+  opened="true"
+  (mouseenter)="mouseenter()"
+  (mouseleave)="mouseleave()"
+>
+  <mat-nav-list *ngFor="let item of navigation[0].children">
+    <nav-item
+      [isShowing]="isShowing"
+      [isExpanded]="isExpanded"
+      [item]="item"
+    ></nav-item>
+  </mat-nav-list>
+  <!-- / Horizontal Navigation Layout -->
+</mat-sidenav>
